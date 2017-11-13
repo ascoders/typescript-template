@@ -2,15 +2,15 @@
   "name": "typescript-template",
   "version": "0.0.1",
   "description": "",
-  "main": "built/src/index.js",
+  "main": "built/index.js",
   "types": "src/index.ts",
   "scripts": {
     "test": "tsc && nyc --reporter=lcov --reporter=text --reporter=json ava && rm -rf .nyc_output",
-    "posttest": "codecov -f coverage/*.json -t bc4c34e2-24cb-4b05-8b97-7f30395e642b",
+    "posttest": "codecov -f coverage/*.json -t",
     "prepublish": "rm -rf built && tsc && npm run build",
     "start": "run-react develop",
     "tslint": "tslint './src/**/*.?(ts|tsx)'",
-    "build": "webpack --config built/scripts/webpack.config.js"
+    "build": "run-react production"
   },
   "ava": {
     "files": [
@@ -38,7 +38,7 @@
     "pre-commit": "^1.2.2",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
-    "run-react": "^2.0.6",
+    "run-react": "^2.1.8",
     "tslint": "^5.8.0",
     "typescript": "^2.6.1",
     "webpack": "^3.8.1"
@@ -54,6 +54,10 @@
     "dlls": [
       "react",
       "react-dom"
-    ]
+    ],
+    "production": {
+      "path": "built",
+      "filename": "bundle.js"
+    }
   }
 }

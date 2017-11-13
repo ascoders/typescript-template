@@ -7,10 +7,16 @@ gen
 # Npm
 node_modules
 
-.awcache
-
 # Code coverage
 coverage
 
 # Nyc
 .nyc_output
+
+# Source
+src
+demos
+tests
+
+# Others
+.awcache

@@ -7,13 +7,14 @@ gen
 # Npm
 node_modules
 
-# Typescript
+# Output
 built
-
-.awcache
 
 # Code coverage
 coverage
 
 # Nyc
 .nyc_output
+
+# Others
+.awcache
