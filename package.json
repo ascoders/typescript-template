@@ -30,6 +30,7 @@
   "devDependencies": {
     "@types/node": "*",
     "@types/react": "*",
+    "@types/react-dom": "*",
     "@types/webpack": "*",
     "ascoders-tslint-config": "^1.0.2",
     "ava": "^0.23.0",
