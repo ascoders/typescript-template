@@ -1,0 +1,19 @@
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+
+# Npm
+node_modules
+
+# Typescript
+built
+
+.awcache
+
+# Code coverage
+coverage
+
+# Nyc
+.nyc_output
