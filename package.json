@@ -52,6 +52,9 @@
     "entrys": [
       "demos/index"
     ],
+    "productionEntrys": [
+      "src/index"
+    ],
     "dlls": [
       "react",
       "react-dom"
